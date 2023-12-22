@@ -1,0 +1,11 @@
+{
+	"name": "auth",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/carloshe/oauth2-server": "^2.0.0"
+	}
+}

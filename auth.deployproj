@@ -1,0 +1,643 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="data\NEWDATA.GDB" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\data\</RemoteDir>
+            <RemoteName>NEWDATA.GDB</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\auth.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>auth.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="img\slide8.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide8.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\mentenance.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>mentenance.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\alert.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>alert.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\master.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>master.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\login.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>login.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\index.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>index.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide2.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide2.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="css\top.css" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\css\</RemoteDir>
+            <RemoteName>top.css</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\top.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>top.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide9.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide9.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\sprites.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>sprites.png</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\help.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>help.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\BBS_bn.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>BBS_bn.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\favicon64.ico" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>favicon64.ico</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\link.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>link.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide1.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide1.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide6.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide6.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\members.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>members.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\header.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>header.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide3.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide3.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\algo.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>algo.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide5.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide5.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide10.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide10.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="css\main.css" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\css\</RemoteDir>
+            <RemoteName>main.css</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\search.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>search.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\admin.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>admin.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide7.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide7.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\main.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>main.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\tables.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>tables.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide4.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide4.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide12.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide12.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\form.htm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\templates\</RemoteDir>
+            <RemoteName>form.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide11.jpg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>auth\img\</RemoteDir>
+            <RemoteName>slide11.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="img\slide1.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide1.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\admin.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>admin.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\master.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>master.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win32\Debug\auth.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>auth.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="img\slide5.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide5.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\mentenance.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>mentenance.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\algo.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>algo.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\alert.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>alert.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\login.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>login.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\top.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>top.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\BBS_bn.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>BBS_bn.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\header.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>header.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide3.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide3.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\main.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>main.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\search.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>search.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\link.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>link.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\sprites.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>sprites.png</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide4.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide4.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="css\main.css" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>main.css</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\help.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>help.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide9.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide9.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide7.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide7.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\tables.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>tables.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\favicon64.ico" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>favicon64.ico</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide2.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide2.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide11.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide11.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\form.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>form.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\index.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>index.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide12.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide12.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide8.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide8.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide10.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide10.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="img\slide6.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>slide6.jpg</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="templates\members.htm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>members.htm</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="data\NEWDATA.GDB" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>NEWDATA.GDB</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="css\top.css" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>auth\</RemoteDir>
+            <RemoteName>top.css</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

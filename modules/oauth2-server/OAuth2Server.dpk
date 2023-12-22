@@ -1,0 +1,110 @@
+package OAuth2Server;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  inet,
+  IndySystem,
+  IndyProtocols,
+  IndyCore;
+
+contains
+  JOSE.Types.Arrays,
+  JOSE.Core.Builder,
+  JOSE.Consumer,
+  JOSE.Core.JWE,
+  JOSE.Context,
+  JOSE.Hashing.HMAC,
+  JOSE.Signing.RSA,
+  JOSE.Types.Utils,
+  JOSE.OpenSSL.Headers,
+  JOSE.Signing.Base,
+  JOSE.Signing.ECDSA,
+  JOSE.Core.JWA.Signing,
+  JOSE.Core.JWA.Compression,
+  JOSE.Core.JWA.Encryption,
+  JOSE.Core.JWS,
+  JOSE.Core.JWA,
+  JOSE.Types.JSON,
+  JOSE.Core.Base,
+  JOSE.Core.JWK,
+  JOSE.Encoding.Base64,
+  JOSE.Consumer.Validators,
+  JOSE.Core.JWT,
+  JOSE.Core.Parts,
+  JOSE.Core.JWA.Factory,
+  JOSE.Types.Bytes,
+  OpenSSL.Core,
+  OpenSSL.EncUtils,
+  OpenSSL.libeay32,
+  OAuth2.AuthorizationServer in 'src\OAuth2.AuthorizationServer.pas',
+  OAuth2.CryptKey in 'src\OAuth2.CryptKey.pas',
+  OAuth2.ResourceServer in 'src\OAuth2.ResourceServer.pas',
+  OAuth2.ResponseType.Abstract in 'src\response-types\OAuth2.ResponseType.Abstract.pas',
+  OAuth2.ResponseType.BearerTokenResponse in 'src\response-types\OAuth2.ResponseType.BearerTokenResponse.pas',
+  OAuth2.Contract.ResponseType in 'src\contracts\OAuth2.Contract.ResponseType.pas',
+  OAuth2.ResponseType.RedirectResponse in 'src\response-types\OAuth2.ResponseType.RedirectResponse.pas',
+  OAuth2.RequestType.AuthorizationRequest in 'src\request-types\OAuth2.RequestType.AuthorizationRequest.pas',
+  OAuth2.Contract.Repository.AccessToken in 'src\contracts\OAuth2.Contract.Repository.AccessToken.pas',
+  OAuth2.Contract.Repository.AuthCode in 'src\contracts\OAuth2.Contract.Repository.AuthCode.pas',
+  OAuth2.Contract.Repository.Client in 'src\contracts\OAuth2.Contract.Repository.Client.pas',
+  OAuth2.Contract.Repository.RefreshToken in 'src\contracts\OAuth2.Contract.Repository.RefreshToken.pas',
+  OAuth2.Contract.Repository.Scope in 'src\contracts\OAuth2.Contract.Repository.Scope.pas',
+  OAuth2.Contract.Repository.User in 'src\contracts\OAuth2.Contract.Repository.User.pas',
+  OAuth2.Provider.Crypto in 'src\providers\OAuth2.Provider.Crypto.pas',
+  OAuth2.Grant.AbstractAuthorize in 'src\grants\OAuth2.Grant.AbstractAuthorize.pas',
+  OAuth2.Grant.AbstractGrant in 'src\grants\OAuth2.Grant.AbstractGrant.pas',
+  OAuth2.Grant.AuthCode in 'src\grants\OAuth2.Grant.AuthCode.pas',
+  OAuth2.Grant.ClientCredentials in 'src\grants\OAuth2.Grant.ClientCredentials.pas',
+  OAuth2.Contract.Grant.GrantType in 'src\contracts\OAuth2.Contract.Grant.GrantType.pas',
+  OAuth2.Grant.Implicit in 'src\grants\OAuth2.Grant.Implicit.pas',
+  OAuth2.Grant.Password in 'src\grants\OAuth2.Grant.Password.pas',
+  OAuth2.Grant.RefreshToken in 'src\grants\OAuth2.Grant.RefreshToken.pas',
+  OAuth2.Exception.ServerException in 'src\exceptions\OAuth2.Exception.ServerException.pas',
+  OAuth2.Contract.Entity.AccessToken in 'src\contracts\OAuth2.Contract.Entity.AccessToken.pas',
+  OAuth2.Contract.Entity.AuthCode in 'src\contracts\OAuth2.Contract.Entity.AuthCode.pas',
+  OAuth2.Contract.Entity.Client in 'src\contracts\OAuth2.Contract.Entity.Client.pas',
+  OAuth2.Contract.Entity.RefreshToken in 'src\contracts\OAuth2.Contract.Entity.RefreshToken.pas',
+  OAuth2.Contract.Entity.Scope in 'src\contracts\OAuth2.Contract.Entity.Scope.pas',
+  OAuth2.Contract.Entity.Token in 'src\contracts\OAuth2.Contract.Entity.Token.pas',
+  OAuth2.Contract.Entity.User in 'src\contracts\OAuth2.Contract.Entity.User.pas',
+  OAuth2.Entity.AccessToken in 'src\entities\OAuth2.Entity.AccessToken.pas',
+  OAuth2.Entity.AuthCode in 'src\entities\OAuth2.Entity.AuthCode.pas',
+  OAuth2.Entity.Client in 'src\entities\OAuth2.Entity.Client.pas',
+  OAuth2.Entity.RefreshToken in 'src\entities\OAuth2.Entity.RefreshToken.pas',
+  OAuth2.Entity.Scope in 'src\entities\OAuth2.Entity.Scope.pas',
+  OAuth2.Entity.Token in 'src\entities\OAuth2.Entity.Token.pas',
+  OAuth2.Entity.User in 'src\entities\OAuth2.Entity.User.pas',
+  OAuth2.Contract.CodeChallengeVerifier in 'src\contracts\OAuth2.Contract.CodeChallengeVerifier.pas',
+  OAuth2.CodeChallengeVerifier.PlainVerifier in 'src\code-challenge-verifiers\OAuth2.CodeChallengeVerifier.PlainVerifier.pas',
+  OAuth2.CodeChallengeVerifier.S256Verifier in 'src\code-challenge-verifiers\OAuth2.CodeChallengeVerifier.S256Verifier.pas',
+  OAuth2.Contract.AuthorizationValidator in 'src\contracts\OAuth2.Contract.AuthorizationValidator.pas',
+  OAuth2.BearerTokenValidator in 'src\authorization-validators\OAuth2.BearerTokenValidator.pas';
+
+end.

@@ -1,0 +1,38 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2023-12-23T06:30:26.0789533+09:00",
+	"installedModules": {
+		"github.com/carloshe/delphi-openssl": {
+			"name": "delphi-openssl",
+			"version": "1.0.4",
+			"hash": "2c14bf5c9426817d995df3142362b779",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/carloshe/oauth2-server": {
+			"name": "oauth2-server",
+			"version": "2.0.0",
+			"hash": "6fd2de643f4a41c9442804a4b47fc365",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/paolo-rossi/delphi-jose-jwt": {
+			"name": "delphi-jose-jwt",
+			"version": "v3.3.0",
+			"hash": "78976fbc6b834888f65b5a6b2f799ead",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"github.com/viniciussanchez/bcrypt": {
+			"name": "bcrypt",
+			"version": "1.0.8",
+			"hash": "69891b745eb58d4f9803acfb84163313",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}
